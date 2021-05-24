@@ -1,0 +1,110 @@
+24-May-2021 18:14:29.181 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log 1 Spring WebApplicationInitializers detected on classpath
+24-May-2021 18:14:36.137 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring embedded WebApplicationContext
+24-May-2021 18:18:18.325 INFO [localhost-startStop-4] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+24-May-2021 18:18:45.511 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log 1 Spring WebApplicationInitializers detected on classpath
+24-May-2021 18:18:52.653 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring embedded WebApplicationContext
+24-May-2021 18:23:52.477 INFO [localhost-startStop-4] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+24-May-2021 18:24:19.247 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log 1 Spring WebApplicationInitializers detected on classpath
+24-May-2021 18:24:26.362 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring embedded WebApplicationContext
+24-May-2021 18:27:06.046 INFO [localhost-startStop-4] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+24-May-2021 18:27:34.699 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log 1 Spring WebApplicationInitializers detected on classpath
+24-May-2021 18:27:41.911 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring embedded WebApplicationContext
+24-May-2021 18:30:44.343 INFO [localhost-startStop-4] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+24-May-2021 18:31:29.199 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log 1 Spring WebApplicationInitializers detected on classpath
+24-May-2021 18:31:36.643 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring embedded WebApplicationContext
+24-May-2021 18:34:56.827 INFO [localhost-startStop-4] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+24-May-2021 18:35:49.704 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log 1 Spring WebApplicationInitializers detected on classpath
+24-May-2021 18:35:56.503 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring embedded WebApplicationContext
+24-May-2021 18:36:26.470 INFO [localhost-startStop-4] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+24-May-2021 18:49:36.634 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log 1 Spring WebApplicationInitializers detected on classpath
+24-May-2021 18:49:41.206 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring embedded WebApplicationContext
+24-May-2021 18:50:15.354 INFO [localhost-startStop-3] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+24-May-2021 18:52:57.007 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log 1 Spring WebApplicationInitializers detected on classpath
+24-May-2021 18:53:02.554 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring embedded WebApplicationContext
+24-May-2021 18:54:31.567 INFO [localhost-startStop-3] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+24-May-2021 19:01:51.960 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log 1 Spring WebApplicationInitializers detected on classpath
+24-May-2021 19:01:57.564 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring embedded WebApplicationContext
+24-May-2021 19:12:10.190 INFO [localhost-startStop-4] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+24-May-2021 19:12:37.847 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log 1 Spring WebApplicationInitializers detected on classpath
+24-May-2021 19:12:43.788 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring embedded WebApplicationContext
+24-May-2021 19:14:31.073 INFO [localhost-startStop-4] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+24-May-2021 19:15:05.169 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log 1 Spring WebApplicationInitializers detected on classpath
+24-May-2021 19:15:10.881 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring embedded WebApplicationContext
+24-May-2021 19:15:22.400 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+24-May-2021 19:15:22.430 SEVERE [http-nio-127.0.0.1-8040-exec-1] org.apache.catalina.core.ApplicationContext.log StandardWrapper.Throwable
+	java.lang.IllegalStateException: The resource configuration is not modifiable in this context.
+		at org.glassfish.jersey.server.ResourceConfig$ImmutableState.addProperties(ResourceConfig.java:240)
+		at org.glassfish.jersey.server.ResourceConfig$ImmutableState.addProperties(ResourceConfig.java:217)
+		at org.glassfish.jersey.server.ResourceConfig.addProperties(ResourceConfig.java:396)
+		at org.glassfish.jersey.server.ResourceConfig$WrappingResourceConfig.mergeApplications(ResourceConfig.java:1127)
+		at org.glassfish.jersey.server.ResourceConfig$WrappingResourceConfig._setApplication(ResourceConfig.java:1071)
+		at org.glassfish.jersey.server.ResourceConfig.setApplication(ResourceConfig.java:1023)
+		at org.glassfish.jersey.server.ApplicationConfigurator.init(ApplicationConfigurator.java:96)
+		at org.glassfish.jersey.server.ApplicationHandler.lambda$initialize$0(ApplicationHandler.java:313)
+		at java.base/java.util.Arrays$ArrayList.forEach(Arrays.java:4390)
+		at org.glassfish.jersey.server.ApplicationHandler.initialize(ApplicationHandler.java:313)
+		at org.glassfish.jersey.server.ApplicationHandler.<init>(ApplicationHandler.java:282)
+		at org.glassfish.jersey.servlet.WebComponent.<init>(WebComponent.java:335)
+		at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:178)
+		at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:370)
+		at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+		at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1144)
+		at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1091)
+		at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:763)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:134)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:544)
+		at org.apache.catalina.valves.rewrite.RewriteValve.invoke(RewriteValve.java:305)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:353)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:616)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:831)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1629)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+24-May-2021 19:15:22.438 SEVERE [http-nio-127.0.0.1-8040-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Allocate exception for servlet [org.jfrog.access.rest.config.JerseyConfig]
+	java.lang.IllegalStateException: The resource configuration is not modifiable in this context.
+		at org.glassfish.jersey.server.ResourceConfig$ImmutableState.addProperties(ResourceConfig.java:240)
+		at org.glassfish.jersey.server.ResourceConfig$ImmutableState.addProperties(ResourceConfig.java:217)
+		at org.glassfish.jersey.server.ResourceConfig.addProperties(ResourceConfig.java:396)
+		at org.glassfish.jersey.server.ResourceConfig$WrappingResourceConfig.mergeApplications(ResourceConfig.java:1127)
+		at org.glassfish.jersey.server.ResourceConfig$WrappingResourceConfig._setApplication(ResourceConfig.java:1071)
+		at org.glassfish.jersey.server.ResourceConfig.setApplication(ResourceConfig.java:1023)
+		at org.glassfish.jersey.server.ApplicationConfigurator.init(ApplicationConfigurator.java:96)
+		at org.glassfish.jersey.server.ApplicationHandler.lambda$initialize$0(ApplicationHandler.java:313)
+		at java.base/java.util.Arrays$ArrayList.forEach(Arrays.java:4390)
+		at org.glassfish.jersey.server.ApplicationHandler.initialize(ApplicationHandler.java:313)
+		at org.glassfish.jersey.server.ApplicationHandler.<init>(ApplicationHandler.java:282)
+		at org.glassfish.jersey.servlet.WebComponent.<init>(WebComponent.java:335)
+		at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:178)
+		at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:370)
+		at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+		at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1144)
+		at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1091)
+		at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:763)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:134)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:544)
+		at org.apache.catalina.valves.rewrite.RewriteValve.invoke(RewriteValve.java:305)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:353)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:616)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:831)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1629)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+24-May-2021 19:19:14.388 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log 1 Spring WebApplicationInitializers detected on classpath
+24-May-2021 19:19:25.613 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring embedded WebApplicationContext
+24-May-2021 19:22:39.348 INFO [localhost-startStop-4] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext

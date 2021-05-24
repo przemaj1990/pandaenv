@@ -1,0 +1,7 @@
+Started by user [8mha:////4HnKjZN+oD4DT31ZtNN9dmzLAEs862P966TULyu0vz9IAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9gsS8lEQACjKVYMAAAAA=[0mpanda
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/test
+[test] $ /bin/sh -xe /tmp/jenkins16846787824134631590.sh
++ echo true
+true
+Finished: SUCCESS

@@ -1,0 +1,61 @@
+version: '3.9'
+
+services:
+
+    jenkins:
+        image: jenkins/jenkins:jdk11
+        container_name: jenkinscompose
+        ports:
+            - "8880:8080"
+            - "50000:50000"
+        user: root
+        volumes:
+            - .../volumes/jenkins:/var/jenkins_home
+        networks:
+            - docker_network
+
+    ubuntu_slave:
+        depends_on:
+            - jenkins
+        container_name: ubuntucompose
+        volumes:
+            - .../var/run/docker.sock:/var/run/docker.sock
+        build:
+            context: ../dockerfiles/slave/
+        command: java -jar agent.jar -jnlpUrl http://jenkins:8080/computer/slave/jenkins-agent.jnlp -secret 6e206f2cf55760e83bd58e1df0c8b4877ba100bcc8dd0f2bafc213440d16c39f -workDir "/home/"
+        networks:
+            - docker_network
+
+    artifactory:
+        image: docker.bintray.io/jfrog/artifactory-oss:latest
+        container_name: artifactorycompose
+        volumes:
+            - ../volumes/artifactory:/var/opt/jfrog/artifactory
+        ports:
+            - "8081:8081"
+            - "8082:8082"
+        networks:
+            - docker_network
+
+    selenium_hub:
+        image: selenium/hub
+        container_name: seleniumhubcompose
+        ports:
+            - "4444:4444"
+        networks:
+            - docker_network
+
+    selenium_firefox:
+        image: selenium/node-firefox 
+        container_name: firefoxcompose
+        depends_on:
+            - selenium_hub
+        environment:
+            - HUB_HOST=seleniumhubcompose
+            - HUB_PORT=4444
+        networks:
+            - docker_network
+
+networks:
+    docker_network:
+        driver: bridge
