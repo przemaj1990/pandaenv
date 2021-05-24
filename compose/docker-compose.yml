@@ -8,7 +8,7 @@ services:
         ports:
             - "8880:8080"
             - "50000:50000"
-        user: root
+        user: jenkins
         volumes:
             - .../volumes/jenkins:/var/jenkins_home
         networks:
