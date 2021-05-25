@@ -336,7 +336,7 @@ metadata:
   ## Logging Settings
   logging:
     application:
-      ## The log level: error, warn, info, debug
+      ## The log level: error, warn, info, debug, trace
       #level: info
 
       ## If console value is true, application logs will also be written to standard out

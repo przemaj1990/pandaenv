@@ -164,3 +164,24 @@ shared.security.joinKeyFile: file '/opt/jfrog/artifactory/var/etc/security/join.
 2021-05-05T12:53:39.769Z [jfrou] [ERROR] [455402a94a816d84] [routing_handler.go:239        ] [main                ] - Failed reading current external routes from file: /opt/jfrog/artifactory/var/data/router/traefik/routes/external/external-routes.toml error: open /opt/jfrog/artifactory/var/data/router/traefik/routes/external/external-routes.toml: permission denied
 2021-05-05T12:53:39.769Z [jfrou] [ERROR] [455402a94a816d84] [external_topology.go:96       ] [main                ] - Failed updating external topology routing rules: failed performing atomic write to file: '/opt/jfrog/artifactory/var/data/router/traefik/routes/external/external-routes.toml'; failed renaming file '/tmp/router157817252' to '/opt/jfrog/artifactory/var/data/router/traefik/routes/external/external-routes.toml'. error: open /opt/jfrog/artifactory/var/data/router/traefik/routes/external/external-routes.toml: permission denied
 2021-05-05T12:53:40.046Z [jfrou] [ERROR] [2b8cdcb9b35263ee] [local_topology.go:261         ] [main                ] - Failed creating unhealthy node routing rule, incoming requests will be routed to local services
+2021-05-25T17:53:49.545Z [jfrou] [INFO ] [5c04c8ca3db3e050] [bootstrap.go:76               ] [main                ] - Router (jfrou) service initialization started. Version: 7.19.4-1 Revision: a650c79d3af810e94b7a9f7f2d843c669475b700 PID: 3839 Home: /opt/jfrog/artifactory
+2021-05-25T17:53:49.546Z [jfrou] [INFO ] [5c04c8ca3db3e050] [bootstrap.go:79               ] [main                ] - JFrog Router IP: 172.18.0.3
+2021-05-25T17:53:49.548Z [jfrou] [INFO ] [5c04c8ca3db3e050] [bootstrap.go:192              ] [main                ] - System configuration encryption report:
+shared.newrelic.licenseKey: does not exist in the config file
+shared.security.joinKeyFile: file '/opt/jfrog/artifactory/var/etc/security/join.key' - already encrypted
+2021-05-25T17:53:49.549Z [jfrou] [INFO ] [5c04c8ca3db3e050] [bootstrap.go:84               ] [main                ] - JFrog Router Service ID: jfrou@01e6gkz5mj75e8whsva5r4rjc6
+2021-05-25T17:53:49.549Z [jfrou] [INFO ] [5c04c8ca3db3e050] [bootstrap.go:85               ] [main                ] - JFrog Router Node ID: 2141e1cf44b1
+2021-05-25T17:53:49.569Z [jfrou] [INFO ] [5c04c8ca3db3e050] [http_client_holder.go:155     ] [main                ] - System cert pool contents were loaded as trusted CAs for TLS communication
+2021-05-25T17:53:49.570Z [jfrou] [INFO ] [5c04c8ca3db3e050] [http_client_holder.go:175     ] [main                ] - Following certificates were successfully loaded as trusted CAs for TLS communication:
+[/opt/jfrog/artifactory/var/data/router/keys/trusted/access-root-ca.crt]
+2021-05-25T17:53:51.549Z [jfrou] [INFO ] [5c04c8ca3db3e050] [config_holder.go:107          ] [main                ] - Configuration update detected
+2021-05-25T17:54:24.269Z [jfrou] [INFO ] [5c04c8ca3db3e050] [join_executor.go:116          ] [main                ] - Cluster join: Trying to rejoin the cluster
+2021-05-25T17:54:25.260Z [jfrou] [INFO ] [5c04c8ca3db3e050] [join_executor.go:205          ] [main                ] - Cluster join: Successfully joined the cluster
+2021-05-25T17:54:25.263Z [jfrou] [INFO ] [5c04c8ca3db3e050] [http_client_holder.go:155     ] [main                ] - System cert pool contents were loaded as trusted CAs for TLS communication
+2021-05-25T17:54:25.263Z [jfrou] [INFO ] [5c04c8ca3db3e050] [http_client_holder.go:175     ] [main                ] - Following certificates were successfully loaded as trusted CAs for TLS communication:
+[/opt/jfrog/artifactory/var/data/router/keys/trusted/access-root-ca.crt]
+2021-05-25T17:54:25.282Z [jfrou] [INFO ] [5c04c8ca3db3e050] [main.go:47                    ] [main                ] - Router (jfrou) service initialization completed in 35.740 seconds. Listening on port: 8082
+2021-05-25T17:54:45.317Z [jfrou] [INFO ] [1b9c9e79593662d4] [local_topology.go:258         ] [main                ] - 
+###############################################################
+###   All services started successfully in 55.775 seconds   ###
+###############################################################
