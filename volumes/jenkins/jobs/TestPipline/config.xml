@@ -1,0 +1,58 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.40">
+  <actions>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@1.8.4"/>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@1.8.4">
+      <jobProperties/>
+      <triggers/>
+      <parameters/>
+      <options/>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
+  </actions>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.2.1"/>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.90">
+    <script>pipeline {
+    agent {
+        label &apos;Slave&apos;
+        
+    }
+
+    tools {
+        // Install the Maven version configured as &quot;M3&quot; and add it to the path.
+        maven &quot;M3&quot;
+    }
+
+stages {
+        stage(&apos;Git pull&apos;) {
+            steps {
+                // Get some code from a GitHub repository
+                git branch: &apos;selenium_grid&apos;, url: &apos;https://github.com/przemaj1990/panda_aplication2.git&apos;
+            }
+        }
+        
+    stage(&apos;mvn clean&apos;) {
+            steps {
+                // Run Maven on a Unix agent.
+                sh &quot;mvn clean install&quot;
+            }
+        }
+        
+    stage(&apos;mvn test&apos;) {
+            steps {
+                // Run Maven on a Unix agent.
+                sh &quot;mvn test -Pselenium&quot;
+            }
+            
+        }
+    }
+}
+</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

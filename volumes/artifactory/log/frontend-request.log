@@ -188,3 +188,12 @@
 2021-05-26T17:46:22.256Z|56e400aca39fe48b|127.0.0.1|admin|GET|/api/v1/ui/auth/screen/globalState|200|39|-|22.695|Chrome|90.0.4430.212|Mac OS|10.15.7
 2021-05-26T17:47:05.368Z|82720958a1dba6  |127.0.0.1|admin|GET|/api/v1/ui/auth/screen/globalState|200|39|-|26.608|Chrome|90.0.4430.212|Mac OS|10.15.7
 2021-05-26T17:48:08.612Z|22aae2a4b1c5624f|127.0.0.1|admin|GET|/api/v1/ui/auth/screen/globalState|200|39|-|30.198|Chrome|90.0.4430.212|Mac OS|10.15.7
+2021-05-26T17:48:57.459Z|7eb2fcdd2804527f|127.0.0.1|admin|GET|/api/v1/ui/auth/screen/globalState|200|39|-|21.270|Chrome|90.0.4430.212|Mac OS|10.15.7
+2021-05-26T17:49:57.517Z|58af9708d26a56c7|127.0.0.1|admin|GET|/api/v1/ui/auth/screen/globalState|200|39|-|50.459|Chrome|90.0.4430.212|Mac OS|10.15.7
+2021-05-26T17:51:02.899Z|18269bc51eaeb674|127.0.0.1|admin|GET|/api/v1/ui/auth/screen/globalState|200|39|-|21.340|Chrome|90.0.4430.212|Mac OS|10.15.7
+2021-05-26T17:51:59.660Z|36aa30501c3bd0ba|127.0.0.1|admin|GET|/api/v1/ui/auth/screen/globalState|200|39|-|28.392|Chrome|90.0.4430.212|Mac OS|10.15.7
+2021-05-26T17:52:57.608Z|3cce1406a639cdd6|127.0.0.1|anonymous|GET|/api/v1/ui/auth/screen/globalState|401|12|-|40.288|Chrome|90.0.4430.212|Mac OS|10.15.7
+2021-05-26T17:52:57.796Z|2ab7a37ab9256393|127.0.0.1|anonymous|POST|/api/v1/ui/auth/logout|200|0|0|16.525|Chrome|90.0.4430.212|Mac OS|10.15.7
+2021-05-26T17:52:58.298Z|1290d48ed1e756c5|127.0.0.1|anonymous|GET|/api/v1/ui/oauth2/loginRequestPlatform|404|74|-|108.582|Chrome|90.0.4430.212|Mac OS|10.15.7
+2021-05-26T17:52:58.303Z|1f7b9b0feb1e5ac9|127.0.0.1|anonymous|POST|/api/v1/ui/auth/loginRelatedData|200|45|17|111.624|Chrome|90.0.4430.212|Mac OS|10.15.7
+2021-05-26T17:52:58.330Z|1bc5dd7281af55e9|127.0.0.1|anonymous|GET|/api/v1/ui/auth/screen/footer|200|248|-|145.197|Chrome|90.0.4430.212|Mac OS|10.15.7

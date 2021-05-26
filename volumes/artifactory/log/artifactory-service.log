@@ -8983,3 +8983,18 @@ Total size freed:        109.42 MB
 2021-05-26T17:28:57.093Z [jfrt ] [INFO ] [ac0ed5529761c89f] [o.a.e.UploadServiceImpl:327   ] [http-nio-8081-exec-5] - Deploy to 'libs-release-local:pl/pandait/panda/maven-metadata.xml.sha1' Content-Length: 40 artificial: false
 2021-05-26T17:28:57.108Z [jfrt ] [INFO ] [9b2ba06977fb63e9] [o.a.e.UploadServiceImpl:327   ] [ttp-nio-8081-exec-10] - Deploy to 'libs-release-local:pl/pandait/panda/maven-metadata.xml.md5' Content-Length: 32 artificial: false
 2021-05-26T17:29:37.219Z [jfrt ] [INFO ] [8418c10c3ebdaf88] [o.a.s.a.ArchiveIndexerImpl:155] [art-exec-11         ] - Indexing archive: libs-release-local:pl/pandait/panda/0.0.1/panda-0.0.1.jar
+2021-05-26T18:29:37.525Z [jfrt ] [INFO ] [                ] [ifactoryApplicationContext:560] [ocalhost-startStop-5] - Artifactory application context set to NOT READY by destroy
+2021-05-26T18:29:37.666Z [jfrt ] [INFO ] [                ] [o.j.c.w.FileWatcher:218       ] [Thread-6            ] - Watch service ended on destroy
+2021-05-26T18:29:37.668Z [jfrt ] [INFO ] [                ] [o.j.c.w.FileWatcher:225       ] [Thread-6            ] - End watch of folder configurations
+2021-05-26T18:29:37.679Z [jfrt ] [INFO ] [                ] [ifactoryApplicationContext:377] [ocalhost-startStop-5] - Destroying 49 Artifactory Spring Beans
+2021-05-26T18:29:37.683Z [jfrt ] [INFO ] [                ] [askServiceDescriptorHandler:44] [ocalhost-startStop-5] - Removing all job Artifact Cleanup from task service handler.
+2021-05-26T18:29:37.690Z [jfrt ] [INFO ] [                ] [askServiceDescriptorHandler:44] [ocalhost-startStop-5] - Removing all job Backup from task service handler.
+2021-05-26T18:29:37.701Z [jfrt ] [INFO ] [                ] [askServiceDescriptorHandler:44] [ocalhost-startStop-5] - Removing all job Garbage Collector from task service handler.
+2021-05-26T18:29:37.705Z [jfrt ] [INFO ] [                ] [o.a.m.f.MetricsServiceImpl:260] [ocalhost-startStop-5] - Stopped metric service.
+2021-05-26T18:29:37.709Z [jfrt ] [INFO ] [                ] [askServiceDescriptorHandler:44] [ocalhost-startStop-5] - Removing all job Indexer from task service handler.
+2021-05-26T18:29:37.717Z [jfrt ] [INFO ] [                ] [.w.NodeEventTaskManagerImpl:59] [ocalhost-startStop-5] - Removing dispatcher thread for operator 'metadata-operator-events'
+2021-05-26T18:29:37.769Z [jfrt ] [INFO ] [                ] [.j.a.c.g.GrpcStreamObserver:76] [c-default-executor-0] - affected permissions stream stopped gracefully - immediate cache invalidation will not work without restart
+2021-05-26T18:29:37.769Z [jfrt ] [INFO ] [                ] [.j.a.c.g.GrpcStreamObserver:76] [c-default-executor-1] - affected platform config stream stopped gracefully - immediate cache invalidation will not work without restart
+2021-05-26T18:29:38.012Z [jfrt ] [INFO ] [                ] [actorySchedulerFactoryBean:845] [ocalhost-startStop-5] - Shutting down Quartz Scheduler
+2021-05-26T18:29:38.018Z [jfrt ] [INFO ] [                ] [a.e.ShiftEventsServiceImpl:143] [ocalhost-startStop-5] - Shutdown terminated: true
+2021-05-26T18:29:38.080Z [jfrt ] [WARN ] [                ] [c.z.h.u.DriverDataSource:70   ] [ocalhost-startStop-5] - Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.

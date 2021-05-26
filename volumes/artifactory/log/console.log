@@ -2270,3 +2270,6 @@ Node ID: '97de886ddbba'
 2021-05-26T14:33:52.000Z [shell] [38;5;69m[INFO ][0m [] [systemYamlHelper.sh:520       ] [main] - Resolved JF_PRODUCT_HOME (/opt/jfrog/artifactory) from environment variable
 2021-05-26T14:33:52.000Z [shell] [38;5;69m[INFO ][0m [] [artifactoryCommon.sh:817      ] [main] - Resolved ${shared.tomcat.workDir||/opt/jfrog/artifactory/var/work/artifactory/tomcat} to default value : /opt/jfrog/artifactory/var/work/artifactory/tomcat
 2021-05-26T14:33:55.000Z [shell] [38;5;69m[INFO ][0m [] [installerCommon.sh:1188       ] [main] - Redirection is set to false. Skipping catalina log redirection
+2021-05-26T18:29:33.000Z [shell] [38;5;69m[INFO ][0m [] [systemYamlHelper.sh:520       ] [main] - Resolved .shared.extraJavaOpts (__sensitive_key_hidden___) from /opt/jfrog/artifactory/var/etc/system.yaml
+2021-05-26T18:29:34.000Z [shell] [38;5;69m[INFO ][0m [] [systemYamlHelper.sh:520       ] [main] - Resolved .shared.extraJavaOpts (__sensitive_key_hidden___) from /opt/jfrog/artifactory/var/etc/system.yaml
+2021-05-26T18:29:34.000Z [shell] [38;5;69m[INFO ][0m [] [installerCommon.sh:1188       ] [main] - Redirection is set to false. Skipping catalina log redirection

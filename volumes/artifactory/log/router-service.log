@@ -253,3 +253,5 @@ shared.security.joinKeyFile: file '/opt/jfrog/artifactory/var/etc/security/join.
 ################################################################
 ###   All services started successfully in 126.603 seconds   ###
 ################################################################
+2021-05-26T18:29:40.455Z [jfrou] [ERROR] [196a221ff9c1d3bf] [external_topology.go:82       ] [main                ] - Failed fetching external topology from Access: Get "http://localhost:8040/access/api/v1/topology": read tcp 127.0.0.1:45688->127.0.0.1:8040: read: connection reset by peer
+2021-05-26T18:29:40.566Z [jfrou] [ERROR] [41b8a50d81f65bdd] [external_topology.go:82       ] [main                ] - Failed fetching external topology from Access: Get "http://localhost:8040/access/api/v1/topology": dial tcp 127.0.0.1:8040: connect: connection refused
