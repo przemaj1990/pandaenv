@@ -1026,3 +1026,7 @@ Caused by: java.net.ConnectException: Connection refused
 2021-05-26T15:00:00.018Z [jfac ] [INFO ] [227b758f88899294] [j.a.s.s.t.TokenServiceImpl:148] [jf-access-task1     ] - Revoked 3 expired tokens.
 2021-05-26T15:35:10.233Z [jfac ] [INFO ] [667b77b7842ae19 ] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 69633c472641
 2021-05-26T15:35:10.255Z [jfac ] [INFO ] [667b77b7842ae19 ] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-05-19T15:35:10 
+2021-05-26T16:35:10.273Z [jfac ] [INFO ] [ddcb17ede8629641] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 69633c472641
+2021-05-26T16:35:10.278Z [jfac ] [INFO ] [ddcb17ede8629641] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-05-19T16:35:10 
+2021-05-26T17:35:10.282Z [jfac ] [INFO ] [1d0184ceeaa7ab9 ] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task1     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 69633c472641
+2021-05-26T17:35:10.285Z [jfac ] [INFO ] [1d0184ceeaa7ab9 ] [.s.s.r.StaleTokenCleanupJob:73] [jf-access-task1     ] - Removed 0 Stale Nodes and 0 Join-Admin-Tokens from before: 2021-05-19T17:35:10 

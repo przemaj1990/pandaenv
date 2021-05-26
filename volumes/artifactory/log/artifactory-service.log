@@ -8953,3 +8953,33 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 2021-05-26T14:35:50.326Z [jfrt ] [INFO ] [                ] [o.j.c.ConfigWrapperImpl:342   ] [pool-10-thread-1    ] - [Node ID: 69633c472641]  detected local  modify for config 'artifactory/config/security/access/access.admin.token'
 2021-05-26T14:36:08.994Z [jfrt ] [INFO ] [14bf92a3448bc09e] [a.e.EventsLogCleanUpService:69] [art-exec-1          ] - Starting cleanup of old events from event log
 2021-05-26T14:36:09.089Z [jfrt ] [INFO ] [14bf92a3448bc09e] [.e.EventsLogCleanUpService:105] [art-exec-1          ] - Cleanup of old events from event log finished
+2021-05-26T16:00:00.025Z [jfrt ] [INFO ] [8686fb5b083dc801] [.s.d.b.s.BinaryServiceImpl:670] [art-exec-5          ] - Triggering Garbage Collection
+2021-05-26T16:00:00.062Z [jfrt ] [INFO ] [8686fb5b083dc801] [.s.d.b.s.g.GarbageCollector:66] [art-exec-5          ] - Starting GC strategy 'TRASH_AND_BINARIES'
+2021-05-26T16:00:00.857Z [jfrt ] [INFO ] [8686fb5b083dc801] [.s.b.s.GarbageCollectorInfo:96] [art-exec-5          ] - Storage garbage collector report:
+Total execution time:    704 millis
+Candidates for deletion: 8
+Checksums deleted:       7
+Binaries deleted:        7
+Total size freed:        109.42 MB
+2021-05-26T16:00:00.924Z [jfrt ] [INFO ] [8686fb5b083dc801] [.s.d.b.s.g.GarbageCollector:68] [art-exec-5          ] - Finished GC Strategy 'TRASH_AND_BINARIES'
+2021-05-26T16:32:13.705Z [jfrt ] [INFO ] [d914e63812e178db] [o.a.e.UploadServiceImpl:454   ] [http-nio-8081-exec-7] - Deploy to 'libs-release-local:pl/pandait/panda/0.0.1/panda-0.0.1.jar' Content-Length: 27351751 (estimation) artificial: false
+2021-05-26T16:32:15.988Z [jfrt ] [WARN ] [d914e63812e178db] [c.z.h.u.DriverDataSource:70   ] [http-nio-8081-exec-7] - Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+2021-05-26T16:32:17.260Z [jfrt ] [INFO ] [d94fe440c342bf97] [o.a.e.UploadServiceImpl:327   ] [http-nio-8081-exec-6] - Deploy to 'libs-release-local:pl/pandait/panda/0.0.1/panda-0.0.1.jar.sha1' Content-Length: 40 artificial: false
+2021-05-26T16:32:17.335Z [jfrt ] [INFO ] [236bb2db8835ec51] [o.a.e.UploadServiceImpl:327   ] [http-nio-8081-exec-3] - Deploy to 'libs-release-local:pl/pandait/panda/0.0.1/panda-0.0.1.jar.md5' Content-Length: 32 artificial: false
+2021-05-26T16:32:17.384Z [jfrt ] [INFO ] [af109e32ca909843] [o.a.e.UploadServiceImpl:454   ] [http-nio-8081-exec-5] - Deploy to 'libs-release-local:pl/pandait/panda/0.0.1/panda-0.0.1.pom' Content-Length: 6263 (estimation) artificial: false
+2021-05-26T16:32:17.699Z [jfrt ] [INFO ] [f09dbad3be152ab3] [o.a.e.UploadServiceImpl:327   ] [ttp-nio-8081-exec-10] - Deploy to 'libs-release-local:pl/pandait/panda/0.0.1/panda-0.0.1.pom.sha1' Content-Length: 40 artificial: false
+2021-05-26T16:32:17.744Z [jfrt ] [INFO ] [3b405808d898e311] [o.a.e.UploadServiceImpl:327   ] [ttp-nio-8081-exec-10] - Deploy to 'libs-release-local:pl/pandait/panda/0.0.1/panda-0.0.1.pom.md5' Content-Length: 32 artificial: false
+2021-05-26T16:32:17.906Z [jfrt ] [INFO ] [47666150db71f585] [o.a.e.UploadServiceImpl:454   ] [http-nio-8081-exec-2] - Deploy to 'libs-release-local:pl/pandait/panda/maven-metadata.xml' Content-Length: 295 (estimation) artificial: false
+2021-05-26T16:32:17.993Z [jfrt ] [INFO ] [8b6f06276b19049f] [o.a.e.UploadServiceImpl:327   ] [http-nio-8081-exec-9] - Deploy to 'libs-release-local:pl/pandait/panda/maven-metadata.xml.sha1' Content-Length: 40 artificial: false
+2021-05-26T16:32:18.021Z [jfrt ] [INFO ] [17d8fc9bfeb527ef] [o.a.e.UploadServiceImpl:327   ] [http-nio-8081-exec-1] - Deploy to 'libs-release-local:pl/pandait/panda/maven-metadata.xml.md5' Content-Length: 32 artificial: false
+2021-05-26T16:32:37.231Z [jfrt ] [INFO ] [8fc53beef83c3891] [o.a.s.a.ArchiveIndexerImpl:155] [art-exec-1          ] - Indexing archive: libs-release-local:pl/pandait/panda/0.0.1/panda-0.0.1.jar
+2021-05-26T17:28:52.803Z [jfrt ] [INFO ] [5d850b4caa02b9ac] [o.a.e.UploadServiceImpl:454   ] [ttp-nio-8081-exec-10] - Deploy to 'libs-release-local:pl/pandait/panda/0.0.1/panda-0.0.1.jar' Content-Length: 27351751 (estimation) artificial: false
+2021-05-26T17:28:56.506Z [jfrt ] [INFO ] [fdd912fffb0d38cf] [o.a.e.UploadServiceImpl:327   ] [http-nio-8081-exec-1] - Deploy to 'libs-release-local:pl/pandait/panda/0.0.1/panda-0.0.1.jar.sha1' Content-Length: 40 artificial: false
+2021-05-26T17:28:56.539Z [jfrt ] [INFO ] [9b1869f617b682b3] [o.a.e.UploadServiceImpl:327   ] [http-nio-8081-exec-9] - Deploy to 'libs-release-local:pl/pandait/panda/0.0.1/panda-0.0.1.jar.md5' Content-Length: 32 artificial: false
+2021-05-26T17:28:56.590Z [jfrt ] [INFO ] [bc899873502fb5a3] [o.a.e.UploadServiceImpl:454   ] [http-nio-8081-exec-3] - Deploy to 'libs-release-local:pl/pandait/panda/0.0.1/panda-0.0.1.pom' Content-Length: 6263 (estimation) artificial: false
+2021-05-26T17:28:56.719Z [jfrt ] [INFO ] [130f27aa61ff0492] [o.a.e.UploadServiceImpl:327   ] [http-nio-8081-exec-8] - Deploy to 'libs-release-local:pl/pandait/panda/0.0.1/panda-0.0.1.pom.sha1' Content-Length: 40 artificial: false
+2021-05-26T17:28:56.752Z [jfrt ] [INFO ] [376ec5d6c5c7b00 ] [o.a.e.UploadServiceImpl:327   ] [http-nio-8081-exec-2] - Deploy to 'libs-release-local:pl/pandait/panda/0.0.1/panda-0.0.1.pom.md5' Content-Length: 32 artificial: false
+2021-05-26T17:28:57.037Z [jfrt ] [INFO ] [476706a664cb872c] [o.a.e.UploadServiceImpl:454   ] [http-nio-8081-exec-6] - Deploy to 'libs-release-local:pl/pandait/panda/maven-metadata.xml' Content-Length: 322 (estimation) artificial: false
+2021-05-26T17:28:57.093Z [jfrt ] [INFO ] [ac0ed5529761c89f] [o.a.e.UploadServiceImpl:327   ] [http-nio-8081-exec-5] - Deploy to 'libs-release-local:pl/pandait/panda/maven-metadata.xml.sha1' Content-Length: 40 artificial: false
+2021-05-26T17:28:57.108Z [jfrt ] [INFO ] [9b2ba06977fb63e9] [o.a.e.UploadServiceImpl:327   ] [ttp-nio-8081-exec-10] - Deploy to 'libs-release-local:pl/pandait/panda/maven-metadata.xml.md5' Content-Length: 32 artificial: false
+2021-05-26T17:29:37.219Z [jfrt ] [INFO ] [8418c10c3ebdaf88] [o.a.s.a.ArchiveIndexerImpl:155] [art-exec-11         ] - Indexing archive: libs-release-local:pl/pandait/panda/0.0.1/panda-0.0.1.jar

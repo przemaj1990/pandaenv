@@ -54,3 +54,4 @@
 2021-05-26T14:35:56.958Z [jffe ] [[34M[INFO ][39M] [                ] [                              ] [main                ] - UI service successfully registered on router, serviceId: jffe@000
 2021-05-26T14:35:58.092Z [jffe ] [[34M[INFO ][39M] [                ] [                              ] [main                ] - Recurring tasks started
 2021-05-26T14:35:59.947Z [jffe ] [[34M[INFO ][39M] [                ] [                              ] [main                ] - frontend (jffe) service initialization completed in 115.75 seconds. Listening on port: port 8070
+2021-05-26T16:37:38.700Z [jffe ] [[31M[1M[ERROR][22M[39M] [693f0f496f1cfa02] [                              ] [main                ] - ArtifactoryClient::http [post] request to ui/auth/login failed with 401 code
