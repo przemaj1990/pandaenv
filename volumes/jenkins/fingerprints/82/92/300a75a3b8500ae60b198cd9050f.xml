@@ -1,0 +1,14 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2021-05-26 07:40:08.604 UTC</timestamp>
+  <md5sum>8292300a75a3b8500ae60b198cd9050f</md5sum>
+  <fileName>Credential id=840bc38b-ec60-4c77-a7ae-ac1203100eaf name=przemaj1990/******</fileName>
+  <usages/>
+  <facets>
+    <com.cloudbees.plugins.credentials.fingerprints.ItemCredentialsFingerprintFacet plugin="credentials@2.3.18">
+      <timestamp>1622014883526</timestamp>
+      <itemFullName>PandaAppPipeline</itemFullName>
+      <timestamp0>1622014808602</timestamp0>
+    </com.cloudbees.plugins.credentials.fingerprints.ItemCredentialsFingerprintFacet>
+  </facets>
+</fingerprint>
