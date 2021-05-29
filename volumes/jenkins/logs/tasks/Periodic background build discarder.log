@@ -1,22 +1,12 @@
-Started at Wed May 26 15:14:15 UTC 2021
-Processing PandaAppPipeline
-Offering PandaAppPipeline to Project Build Discarder
-Finished at Wed May 26 15:14:15 UTC 2021. 7ms
-Started at Wed May 26 16:14:15 UTC 2021
-Processing PandaAppPipeline
-Offering PandaAppPipeline to Project Build Discarder
-Finished at Wed May 26 16:14:15 UTC 2021. 5ms
-Started at Wed May 26 17:14:15 UTC 2021
-Processing maven
-Offering maven to Project Build Discarder
-Processing PandaAppPipeline
-Offering PandaAppPipeline to Project Build Discarder
-Finished at Wed May 26 17:14:15 UTC 2021. 1ms
-Started at Wed May 26 18:14:15 UTC 2021
+Started at Sat May 29 18:23:52 UTC 2021
+Processing Jenkinsfile
+Offering Jenkinsfile to Project Build Discarder
+Processing Jenkinsfile2
+Offering Jenkinsfile2 to Project Build Discarder
 Processing maven
 Offering maven to Project Build Discarder
 Processing PandaAppPipeline
 Offering PandaAppPipeline to Project Build Discarder
 Processing TestPipline
 Offering TestPipline to Project Build Discarder
-Finished at Wed May 26 18:14:15 UTC 2021. 2ms
+Finished at Sat May 29 18:23:52 UTC 2021. 5ms

@@ -1,0 +1,73 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@3.8">
+  <node class="cps.n.StepEndNode" plugin="workflow-cps@2.90">
+    <parentIds>
+      <string>26</string>
+    </parentIds>
+    <id>27</id>
+    <startId>24</startId>
+  </node>
+  <actions>
+    <wf.a.TimingAction plugin="workflow-api@2.42">
+      <startTime>1622218467535</startTime>
+    </wf.a.TimingAction>
+    <wf.a.ErrorAction plugin="workflow-api@2.42">
+      <error class="org.jenkinsci.plugins.workflow.steps.FlowInterruptedException" plugin="workflow-step-api@2.23">
+        <stackTrace>
+          <trace>org.jenkinsci.plugins.workflow.cps.CpsFlowExecution.interrupt(CpsFlowExecution.java:1147)</trace>
+          <trace>org.jenkinsci.plugins.workflow.job.WorkflowRun$2.lambda$interrupt$0(WorkflowRun.java:388)</trace>
+          <trace>jenkins.security.ImpersonatingScheduledExecutorService$1.run(ImpersonatingScheduledExecutorService.java:67)</trace>
+          <trace>java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)</trace>
+          <trace>java.util.concurrent.FutureTask.run(FutureTask.java:266)</trace>
+          <trace>java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)</trace>
+          <trace>java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)</trace>
+          <trace>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)</trace>
+          <trace>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)</trace>
+          <trace>java.lang.Thread.run(Thread.java:748)</trace>
+        </stackTrace>
+        <suppressedExceptions>
+          <java.lang.InterruptedException>
+            <stackTrace>
+              <trace>java.lang.Object.wait(Native Method)</trace>
+              <trace>hudson.remoting.Request.call(Request.java:177)</trace>
+              <trace>hudson.remoting.Channel.call(Channel.java:1000)</trace>
+              <trace>hudson.FilePath.act(FilePath.java:1166)</trace>
+              <trace>hudson.FilePath.act(FilePath.java:1155)</trace>
+              <trace>org.jenkinsci.plugins.gitclient.Git.getClient(Git.java:121)</trace>
+              <trace>hudson.plugins.git.GitSCM.createClient(GitSCM.java:906)</trace>
+              <trace>hudson.plugins.git.GitSCM.createClient(GitSCM.java:837)</trace>
+              <trace>hudson.plugins.git.GitSCM.checkout(GitSCM.java:1290)</trace>
+              <trace>org.jenkinsci.plugins.workflow.steps.scm.SCMStep.checkout(SCMStep.java:125)</trace>
+              <trace>org.jenkinsci.plugins.workflow.steps.scm.SCMStep$StepExecutionImpl.run(SCMStep.java:93)</trace>
+              <trace>org.jenkinsci.plugins.workflow.steps.scm.SCMStep$StepExecutionImpl.run(SCMStep.java:80)</trace>
+              <trace>org.jenkinsci.plugins.workflow.steps.SynchronousNonBlockingStepExecution.lambda$start$0(SynchronousNonBlockingStepExecution.java:47)</trace>
+              <trace>java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)</trace>
+              <trace>java.util.concurrent.FutureTask.run(FutureTask.java:266)</trace>
+              <trace>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)</trace>
+              <trace>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)</trace>
+              <trace>java.lang.Thread.run(Thread.java:748)</trace>
+            </stackTrace>
+            <suppressedExceptions class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+              <c class="list"/>
+              <list reference="../c"/>
+            </suppressedExceptions>
+          </java.lang.InterruptedException>
+        </suppressedExceptions>
+        <result>
+          <name>ABORTED</name>
+          <ordinal>4</ordinal>
+          <color>ABORTED</color>
+          <completeBuild>false</completeBuild>
+        </result>
+        <causes class="java.util.Arrays$ArrayList">
+          <a class="jenkins.model.CauseOfInterruption-array">
+            <jenkins.model.CauseOfInterruption_-UserInterruption>
+              <user>panda</user>
+            </jenkins.model.CauseOfInterruption_-UserInterruption>
+          </a>
+        </causes>
+        <actualInterruption>true</actualInterruption>
+      </error>
+    </wf.a.ErrorAction>
+  </actions>
+</Tag>

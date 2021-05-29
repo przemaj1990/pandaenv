@@ -1,0 +1,16 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@3.8">
+  <node class="cps.n.StepAtomNode" plugin="workflow-cps@2.90">
+    <parentIds>
+      <string>94</string>
+    </parentIds>
+    <id>95</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.steps.DeleteDirStep</descriptorId>
+  </node>
+  <actions>
+    <wf.a.TimingAction plugin="workflow-api@2.42">
+      <startTime>1622226365535</startTime>
+    </wf.a.TimingAction>
+    <s.a.LogStorageAction/>
+  </actions>
+</Tag>

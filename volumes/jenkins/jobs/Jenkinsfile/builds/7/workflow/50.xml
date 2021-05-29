@@ -1,0 +1,113 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@3.8">
+  <node class="cps.n.StepEndNode" plugin="workflow-cps@2.90">
+    <parentIds>
+      <string>49</string>
+    </parentIds>
+    <id>50</id>
+    <startId>4</startId>
+  </node>
+  <actions>
+    <wf.a.BodyInvocationAction plugin="workflow-api@2.42"/>
+    <wf.a.TimingAction plugin="workflow-api@2.42">
+      <startTime>1622219490426</startTime>
+    </wf.a.TimingAction>
+    <wf.a.ErrorAction plugin="workflow-api@2.42">
+      <error class="java.io.IOException">
+        <detailMessage>Remote call on JNLP4-connect connection from 172.18.0.1/172.18.0.1:39232 failed</detailMessage>
+        <cause class="java.lang.NoClassDefFoundError">
+          <detailMessage>Could not initialize class hudson.security.ACL</detailMessage>
+          <stackTrace>
+            <trace>jenkins.util.Timer.get(Timer.java:47)</trace>
+            <trace>org.jenkinsci.plugins.workflow.log.DelayBufferedOutputStream.reschedule(DelayBufferedOutputStream.java:72)</trace>
+            <trace>org.jenkinsci.plugins.workflow.log.DelayBufferedOutputStream.&lt;init&gt;(DelayBufferedOutputStream.java:68)</trace>
+            <trace>org.jenkinsci.plugins.workflow.log.BufferedBuildListener$Replacement.readResolve(BufferedBuildListener.java:77)</trace>
+            <trace>jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)</trace>
+            <trace>jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)</trace>
+            <trace>jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)</trace>
+            <trace>java.lang.reflect.Method.invoke(Method.java:566)</trace>
+            <trace>java.io.ObjectStreamClass.invokeReadResolve(ObjectStreamClass.java:1265)</trace>
+            <trace>java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2205)</trace>
+            <trace>java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1679)</trace>
+            <trace>java.io.ObjectInputStream.defaultReadFields(ObjectInputStream.java:2464)</trace>
+            <trace>java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2358)</trace>
+            <trace>java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2196)</trace>
+            <trace>java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1679)</trace>
+            <trace>java.io.ObjectInputStream.defaultReadFields(ObjectInputStream.java:2464)</trace>
+            <trace>java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2358)</trace>
+            <trace>java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2196)</trace>
+            <trace>java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1679)</trace>
+            <trace>java.io.ObjectInputStream.defaultReadFields(ObjectInputStream.java:2464)</trace>
+            <trace>java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2358)</trace>
+            <trace>java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2196)</trace>
+            <trace>java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1679)</trace>
+            <trace>java.io.ObjectInputStream.defaultReadFields(ObjectInputStream.java:2464)</trace>
+            <trace>java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2358)</trace>
+            <trace>java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2196)</trace>
+            <trace>java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1679)</trace>
+            <trace>java.io.ObjectInputStream.readObject(ObjectInputStream.java:493)</trace>
+            <trace>java.io.ObjectInputStream.readObject(ObjectInputStream.java:451)</trace>
+            <trace>hudson.remoting.UserRequest.deserialize(UserRequest.java:290)</trace>
+            <trace>hudson.remoting.UserRequest.perform(UserRequest.java:189)</trace>
+            <trace>hudson.remoting.UserRequest.perform(UserRequest.java:54)</trace>
+            <trace>hudson.remoting.Request$2.run(Request.java:369)</trace>
+            <trace>hudson.remoting.InterceptingExecutorService$1.call(InterceptingExecutorService.java:72)</trace>
+            <trace>java.util.concurrent.FutureTask.run(FutureTask.java:264)</trace>
+            <trace>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)</trace>
+            <trace>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)</trace>
+            <trace>hudson.remoting.Engine$1.lambda$newThread$0(Engine.java:97)</trace>
+            <trace>java.lang.Thread.run(Thread.java:829)</trace>
+          </stackTrace>
+          <suppressedExceptions>
+            <hudson.remoting.Channel_-CallSiteStackTrace>
+              <detailMessage>Remote call to JNLP4-connect connection from 172.18.0.1/172.18.0.1:39232</detailMessage>
+              <stackTrace>
+                <trace>hudson.remoting.Channel.attachCallSiteStackTrace(Channel.java:1795)</trace>
+                <trace>hudson.remoting.UserRequest$ExceptionResponse.retrieve(UserRequest.java:356)</trace>
+                <trace>hudson.remoting.Channel.call(Channel.java:1001)</trace>
+                <trace>hudson.FilePath.act(FilePath.java:1166)</trace>
+                <trace>hudson.FilePath.act(FilePath.java:1155)</trace>
+                <trace>org.jenkinsci.plugins.gitclient.Git.getClient(Git.java:121)</trace>
+                <trace>hudson.plugins.git.GitSCM.createClient(GitSCM.java:906)</trace>
+                <trace>hudson.plugins.git.GitSCM.createClient(GitSCM.java:837)</trace>
+                <trace>hudson.plugins.git.GitSCM.checkout(GitSCM.java:1290)</trace>
+                <trace>org.jenkinsci.plugins.workflow.steps.scm.SCMStep.checkout(SCMStep.java:125)</trace>
+                <trace>org.jenkinsci.plugins.workflow.steps.scm.SCMStep$StepExecutionImpl.run(SCMStep.java:93)</trace>
+                <trace>org.jenkinsci.plugins.workflow.steps.scm.SCMStep$StepExecutionImpl.run(SCMStep.java:80)</trace>
+                <trace>org.jenkinsci.plugins.workflow.steps.SynchronousNonBlockingStepExecution.lambda$start$0(SynchronousNonBlockingStepExecution.java:47)</trace>
+                <trace>java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)</trace>
+                <trace>java.util.concurrent.FutureTask.run(FutureTask.java:266)</trace>
+                <trace>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)</trace>
+                <trace>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)</trace>
+                <trace>java.lang.Thread.run(Thread.java:748)</trace>
+              </stackTrace>
+              <suppressedExceptions class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+                <c class="list"/>
+                <list reference="../c"/>
+              </suppressedExceptions>
+            </hudson.remoting.Channel_-CallSiteStackTrace>
+          </suppressedExceptions>
+        </cause>
+        <stackTrace>
+          <trace>hudson.remoting.Channel.call(Channel.java:1005)</trace>
+          <trace>hudson.FilePath.act(FilePath.java:1166)</trace>
+          <trace>hudson.FilePath.act(FilePath.java:1155)</trace>
+          <trace>org.jenkinsci.plugins.gitclient.Git.getClient(Git.java:121)</trace>
+          <trace>hudson.plugins.git.GitSCM.createClient(GitSCM.java:906)</trace>
+          <trace>hudson.plugins.git.GitSCM.createClient(GitSCM.java:837)</trace>
+          <trace>hudson.plugins.git.GitSCM.checkout(GitSCM.java:1290)</trace>
+          <trace>org.jenkinsci.plugins.workflow.steps.scm.SCMStep.checkout(SCMStep.java:125)</trace>
+          <trace>org.jenkinsci.plugins.workflow.steps.scm.SCMStep$StepExecutionImpl.run(SCMStep.java:93)</trace>
+          <trace>org.jenkinsci.plugins.workflow.steps.scm.SCMStep$StepExecutionImpl.run(SCMStep.java:80)</trace>
+          <trace>org.jenkinsci.plugins.workflow.steps.SynchronousNonBlockingStepExecution.lambda$start$0(SynchronousNonBlockingStepExecution.java:47)</trace>
+          <trace>java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)</trace>
+          <trace>java.util.concurrent.FutureTask.run(FutureTask.java:266)</trace>
+          <trace>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)</trace>
+          <trace>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)</trace>
+          <trace>java.lang.Thread.run(Thread.java:748)</trace>
+        </stackTrace>
+        <suppressedExceptions class="java.util.Collections$UnmodifiableRandomAccessList" reference="../cause/suppressedExceptions/hudson.remoting.Channel_-CallSiteStackTrace/suppressedExceptions"/>
+      </error>
+    </wf.a.ErrorAction>
+  </actions>
+</Tag>
